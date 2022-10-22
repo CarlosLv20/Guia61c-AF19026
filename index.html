@@ -1,1 +1,52 @@
-hola
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Ejemplo web api - AF19026</title>
+	<meta charset="utf-8"  />
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+<script src="codigo.js"></script>
+</head>
+<body >
+ <h1>Ejemplo web api - 61c</h1>
+     <h2>
+		Guia: 61c<br>
+		Nombre: Carlos Alberto Arévalo Flores<br>
+		Carnet: AF19026<br>
+		Correo: af19026@ues.edu.sv
+	 </h2>
+	 <button onclick="obtenerProductos();this.style.display='none';"><h3>Obtener Productos</h3></button>
+	 <div class="formulario">
+		<br>
+		Titulo: <input type="text" id="titulo">
+		Precio: <input type="text" id="precio">
+		<br>
+		Descripcion: <input type="text" id="descripcion">
+		<br>
+		Imagen: <input type="text" id="imagen">
+		Categoria: <input type="text" id="categoria">
+		<br>
+		<button onclick="agregarProductos();this.style.display='none';"><h3>Agregar Producto</h3></button>
+	 </div>
+	 <div id="listado" style="display:none;">
+	 <form name="filtroprods" id="filtroprods">
+	   <h3>Seleccione Categorias</h3>
+	   <input type="checkbox" id="c1" value="c1" checked>Electronicos
+	 <input type="checkbox" id="c2" value="c2" checked>Joyería
+   <input type="checkbox" id="c3" value="c3" checked>Ropa Caballero
+   <input type="checkbox" id="c4" value="c4" checked>Ropa Dama
+   <ol><li>Click en la imagen para Acercamiento</li>
+   <li>Click en precio para ordenar Asc o Desc</li></ol>
+     <table id="tabla" border="1">
+	 <thead>
+	 <tr><th>id</th><th>foto</th><th  id="price">price</th>
+	 <th>title</th><th>description</th><th>category</th></tr>
+	 </thead>
+	 <tbody id="tbody"></tbody>
+	 </table>
+	 </form>
+	 </div>
+	
+     
+</body>
+</html>
